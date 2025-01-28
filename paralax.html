@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            display: flex;
+            height: 4rem;
+            background-color: white;
+            gap: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .nav img {
+            height: 3.75rem;
+            width: 3.75rem;
+        }
+
+       
+
+        .top1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+
+        }
+
+        .top1 h1 {
+            margin-top: 100px;
+        }
+
+        .top3 {
+            display: flex;
+            margin-right: 25rem;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .top3 video {
+            display: block;
+            margin: 0 auto;
+            width: 18.75rem;
+            height: auto;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 13rem;
+            margin-bottom: 10rem;
+            /* margin-top: -1rem; */
+        }
+
+        input {
+            padding-inline: 3.75rem;
+            padding-block: 0.4375rem;
+
+
+        }
+
+        .mess {
+            display: flex;
+            width: 27rem;
+            margin-top: 10px;
+        }
+
+        .btn {
+            height: 2.1875rem;
+            width: 9.375rem;
+            border-radius: 5px;
+            background-color: rgb(7, 7, 7);
+            color: white;
+        }
+
+        .btndiv {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        footer img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .icon-text {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-text img {
+            margin-right: 10px;
+        }
+
+        .parallax {
+            background-image: url('/img-par/fond.jpg');
+            height: 1000px;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="parallax">
+        <div class="nav">
+            <div><img src="/img-par/cafe.jpg" alt=""></div>
+            <div><img src="/img-par/contact.jpg" alt=""></div>
+            <div><img src="/img-par/istockphoto-1165546863-612x612.jpg" alt=""></div>
+            <div><img src="/img-par/mail.jpg" alt=""></div>
+        
+        <div class="search"><img src="/img-par/search.png" alt=""></div>
+    </div>
+</header>
+
+    <main></main>
+
+    <footer>
+        <div class="foot">
+            <div class="top1">
+                <h1>WHERE I WORK</h1>
+                <p>I'd love your feedback!</p>
+            </div>
+            <div class="top3">
+                <div>
+                    <video src="COURS COMPLET HTML ET CSS [171] - Présentation du cours.mp4"></video>
+                </div>
+                <div>
+                    <div class="icon-text gps">
+                        <img src="/img-par/13154450.jpg" alt="">
+                        <p>Chicago, US</p>
+                    </div>
+                    <div class="icon-text phone">
+                        <img src="/img-par/phone.jpg" alt="">
+                        <p>Phone: +00 151515</p>
+                    </div>
+                    <div class="icon-text mail">
+                        <img src="/img-par/mail.jpg" alt="">
+                        <p>Email: mail@mail.com</p>
+                    </div>
+                    <div class="icon-text">
+                        <p>Swing by for a cup of<img src="/img-par/cafe.jpg" alt="">, or leave me a note</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <form action="post">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input class="mess" type="text" id="message" name="message" placeholder="Message">
+                    <div class="btndiv">
+                        <button class="btn" type="submit"><img src="/img-par/send.png" alt="">SEND MESSAGE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
