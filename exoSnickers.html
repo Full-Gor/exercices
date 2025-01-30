@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {}
+
+        .big-tof {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .big-tof img {
+            position: relative;
+            top: 3rem;
+            right: 35rem;
+            width: 31.25rem;
+            height: 31.25rem;
+            border-radius: 7%;
+        }
+
+        .-tof {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            width: 32rem;
+        }
+
+        .carre img {
+            position: relative;
+            left: 8.5rem;
+            top: 4rem;
+            width: 7rem;
+            height: 7rem;
+            border-radius: 7%;
+        }
+
+        .titre1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 30rem;
+            font-size: 1.5rem;
+            color: orangered;
+        }
+
+        .titre2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 33rem;
+            right: -1rem;
+            font-size: 1.5rem;
+        }
+
+        .para {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 33rem;
+            left: 8rem;
+            color: gray;
+        }
+
+        .perc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 34rem;
+            left: 56rem;
+            width: 2.5rem;
+            height: 2rem;
+            border-radius: 8%;
+            background-color: rgb(255, 136, 93);
+        }
+
+        .prix {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 32rem;
+            left: 52rem;
+            width: 2.5rem;
+            height: 2rem;
+            border-radius: 8%;
+            font-size: 1.8rem;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 45rem;
+            left: 58.5rem;
+            width: 13rem;
+            height: 3.7rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: rgb(255, 136, 93);
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .plus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2rem;
+            height: 3.7rem;
+            position: relative;
+            bottom: 33.4rem;
+            left: 51.6rem;
+            background-color: rgb(255, 136, 93);
+            border: 1px solid rgb(119, 118, 118);
+            border-radius: 0.5rem;
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .moin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2rem;
+            height: 3.7rem;
+            position: relative;
+            bottom: 41.2rem;
+            left: 56rem;
+            background-color: rgb(255, 136, 93);
+            border: 1px solid rgb(119, 118, 118);
+            border-radius: 0.5rem;
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2rem;
+            height: 3.7rem;
+            position: relative;
+            bottom: 37.3rem;
+            left: 53.8rem;
+            font-size: 1.5rem;
+            border: 1px solid rgb(119, 118, 118);
+            border-radius: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .big-tof img {
+                top: 1rem;
+                right: 0;
+                width: 20rem;
+                height: 20rem;
+            }
+
+            .-tof {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .carre img {
+                left: 0;
+                top: 1rem;
+                width: 5rem;
+                height: 5rem;
+            }
+
+            .titre1 {
+                bottom: 20rem;
+                font-size: 1rem;
+            }
+
+            .titre2 {
+                bottom: 22rem;
+                font-size: 1rem;
+            }
+
+            .para {
+                bottom: 22rem;
+                left: 0;
+                font-size: 0.8rem;
+                text-align: center;
+            }
+
+            .perc {
+                bottom: 23rem;
+                left: 0;
+                width: 2rem;
+                height: 1.5rem;
+            }
+
+            .prix {
+                bottom: 21rem;
+                left: 0;
+                width: 2rem;
+                height: 1.5rem;
+                font-size: 1.2rem;
+            }
+
+            button {
+                bottom: 30rem;
+                left: 0;
+                width: 10rem;
+                height: 3rem;
+                font-size: 1rem;
+            }
+
+            .plus, .moin, .number {
+                bottom: 25rem;
+                left: 0;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="big-tof">
+            <img src="sneakers.jpg" alt="">
+        </div>
+        <div class="-tof">
+            <div class="carre">
+                <img src="sneakers.jpg" alt="">
+            </div>
+            <div class="carre">
+                <img src="sneakers2.jpg" alt="">
+            </div>
+            <div class="carre">
+                <img src="sneakers3.jpg" alt="">
+            </div>
+            <div class="carre">
+                <img src="sneakers4.jpg" alt="">
+            </div>
+        </div>
+        <div class="titre1">
+            <p>SNEAKERS COMPANY</p>
+        </div>
+        <div class="titre2">
+            <h1>100% Tailwind <br> Sneakers</h1>
+        </div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus <br> minus saepe ex, quod expedita autem
+            sapiente fugit rerum quidem esse in aperiam, <br> laboriosam optio blanditiis fuga animi asperiores ipsa
+            repellat.
+        </div>
+        <div class="prix">
+            <p>354£</p>
+        </div>
+        <div class="perc">
+            <p>-50%</p>
+        </div>
+
+        <div class="plus" onclick="increment()">+</div>
+        <div class="number" id="clickNumber">0</div>
+        <div class="moin" onclick="decrement()">-</div>
+        <button>ajouter au panier</button>
+    </div>
+
+    <script>
+        let clickNumber = 0;
+
+        function increment() {
+            clickNumber++;
+            document.getElementById('clickNumber').innerText = clickNumber;
+        }
+
+        function decrement() {
+            clickNumber--;
+            document.getElementById('clickNumber').innerText = clickNumber;
+        }
+    </script>
+</body>
+
+</html>
