@@ -8,10 +8,13 @@
     <style>
         .container {}
 
+
+
         .big-tof {
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
         .big-tof img {
@@ -22,6 +25,17 @@
             height: 31.25rem;
             border-radius: 7%;
         }
+
+        .overlay {
+            display: none;
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 100px;
+            left: 200px;
+        }
+
 
         .-tof {
             display: flex;
@@ -159,79 +173,62 @@
             border: 1px solid rgb(119, 118, 118);
             border-radius: 0.5rem;
         }
-        @media (max-width: 768px) {
+
+        @media (max-width: 780px) {
+
             .big-tof img {
-                top: 1rem;
-                right: 0;
-                width: 20rem;
-                height: 20rem;
+                display: flex;
+                right: 90px;
             }
 
-            .-tof {
-                flex-direction: column;
-                width: 100%;
-            }
-
+            .-tof,
             .carre img {
+                display: flex;
                 left: 0;
-                top: 1rem;
-                width: 5rem;
-                height: 5rem;
+                bottom: 0;
+                flex-direction: column;
             }
 
-            .titre1 {
-                bottom: 20rem;
-                font-size: 1rem;
-            }
-
+            .titre1,
             .titre2 {
-                bottom: 22rem;
-                font-size: 1rem;
+
+                top: 100px;
+                right: 90px;
             }
 
             .para {
-                bottom: 22rem;
-                left: 0;
-                font-size: 0.8rem;
-                text-align: center;
+                top: 100px;
+                left: -50px;
             }
 
-            .perc {
-                bottom: 23rem;
-                left: 0;
-                width: 2rem;
-                height: 1.5rem;
-            }
+            .perc,
+            .prix,
+            .plus,
+            .moin,
+            .number {
+                display: flex;
+                left: 300px;
+                top: 150px;
+                flex-direction: column;
 
-            .prix {
-                bottom: 21rem;
-                left: 0;
-                width: 2rem;
-                height: 1.5rem;
-                font-size: 1.2rem;
             }
 
             button {
-                bottom: 30rem;
-                left: 0;
-                width: 10rem;
-                height: 3rem;
-                font-size: 1rem;
-            }
-
-            .plus, .moin, .number {
-                bottom: 25rem;
-                left: 0;
-                font-size: 1rem;
+                display: flex;
+                top: 155px;
+                left: 220px;
             }
         }
     </style>
 </head>
 
 <body>
+
     <div class="container">
-        <div class="big-tof">
+        <div class="big-tof" onclick="showOverlay()">
             <img src="sneakers.jpg" alt="">
+            <div id="overlay" class="overlay"></div>
+
         </div>
         <div class="-tof">
             <div class="carre">
@@ -271,7 +268,18 @@
         <button>ajouter au panier</button>
     </div>
 
+
+
+
+
+
+
     <script>
+        function showOverlay() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'block';
+        }
+
         let clickNumber = 0;
 
         function increment() {
